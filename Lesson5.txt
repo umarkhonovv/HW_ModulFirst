@@ -1,0 +1,450 @@
+namespace Modul_1_Lesson_5
+{
+    internal class Program
+    {
+        public static void FindingAmountOfThreeRoomNumbers(List<int> numbers, out int amount)
+        {
+            amount = 0;
+            for (var i = 0; i < numbers.Count; i++)
+            {
+                if (numbers[i] > 99 && numbers[i] < 1000)
+                {
+                    ++amount;
+                }
+            }
+        }
+        public static void FindingAmountOfEvenNumbers(List<int> numbers, out int amount)
+        {
+            amount = 0;
+            for (var i = 0; i < numbers.Count; i++)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    ++amount;
+                }
+            }
+        }
+        public static int FindingValueOfOddNumbers(List<int> numbers)
+        {
+            var valueOfOddNUmbers = 0;
+            for (var i = 0; i < numbers.Count; i++)
+            {
+                if (numbers[i] % 2 != 0)
+                {
+                    valueOfOddNUmbers += numbers[i];
+                }
+            }
+            return valueOfOddNUmbers;
+        }
+        public static void CountMultiplesOf3And7(List<int> numbers, out int amount)
+        {
+            amount = 0;
+            for (var i = 0; i < numbers.Count; i++)
+            {
+                if (numbers[i] % 3 == 0 && numbers[i] % 7 == 0)
+                {
+                    ++amount;
+                }
+            }
+        }
+        public static void CountAndSumOddTwoDigitNumbers(List<int> numbers, out int amount, out int sum)
+        {
+            amount = 0;
+            sum = 0;
+            for (var i = 0; i < numbers.Count; ++i)
+            {
+                if (numbers[i] > 9 && numbers[i] < 100 && numbers[i] % 2 != 0)
+                {
+                    ++amount;
+                    sum += numbers[i];
+                }
+            }
+        }
+        public static void SwapTwoElementsOfList(List<int> numbers, int firstIndexToSwap, int secondIndexToSwap)
+        {
+            var temp = numbers[firstIndexToSwap];
+            numbers[firstIndexToSwap] = numbers[secondIndexToSwap];
+            numbers[secondIndexToSwap] = temp;
+        }
+        public static int SumLastThreeElements(List<int> numbers)
+        {
+            var sum = 0;
+            for (var i = numbers.Count - 3; i < numbers.Count; ++i)
+            {
+                sum += numbers[i];
+            }
+            return sum;
+        }
+        public static bool CompairingOddAndEvenNumbers(List<int> numbers)
+        {
+            var oddNumbers = 0;
+            var evenNumbers = 0;
+            for (var i = 0; i < numbers.Count; ++i)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    evenNumbers++;
+                }
+                else if (numbers[i] % 2 != 0)
+                {
+                    oddNumbers++;
+                }
+            }
+            return oddNumbers > evenNumbers;
+        }
+        public static void TripleEvenElements(List<int> numbers)
+        {
+            for (var i = 0; i < numbers.Count; ++i)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    numbers[i] *= 3;
+                }
+            }
+        }
+        public static bool AreAllNumbersMultipleOf5(List<int> numbers)
+        {
+            for (var i = 0; i < numbers.Count; ++i)
+            {
+                if (numbers[i] % 5 != 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        public static bool AreFirstThreeNumbers2Digit(List<int> numbers)
+        {
+            for (var i = 0; i < 3; ++i)
+            {
+                if (numbers[i] < 10 || numbers[i] > 99)
+                {
+                    return false ;
+                }
+            }
+            return true;
+        }
+        public static bool CheckFirstTwoEvenLastTwoOdd(List<int> numbers)
+        {
+            return (numbers[0] % 2 == 0 && numbers[1] % 2 == 0 
+                && numbers[numbers.Count - 2] % 2 != 0 
+                && numbers[numbers.Count - 1] % 2 != 0);
+        }
+        public static int TheSmallestNumber(List<int> numbers)
+        {
+            numbers.Sort();
+            return numbers[0];
+        }
+        public static int SumOfTheSmallestAndBiggestNumbers(List<int> numbers)
+        {
+            numbers.Sort();
+            return numbers[0] + numbers[numbers.Count - 1];
+        }
+        public static void Add100ToTwoDigitNumbers(List<int> numbers)
+        {
+            for (var i = 0; i < numbers.Count; i++)
+            {
+                if (numbers[i] > 9 && numbers[i] < 100)
+                {
+                    numbers[i] += 100;
+                }
+            }
+        }
+        public static void DeterminTheAmountOfPositiveAndNegativeNumbers(List<int> numbers, out int positive,out int negative )
+        {
+            positive = 0;
+            negative = 0;
+            for(var i = 0;i < numbers.Count;i++)
+            {
+                if (numbers[i] >= 0)
+                {
+                    ++positive;
+                }
+                else
+                {
+                    ++negative;
+                }
+            }
+        }
+        public static int CountElementsLessThanFirst(List<int> numbers)
+        {
+            var amount = 0;
+            for(var i = 1;i<numbers.Count;i++)
+            {
+                if (numbers[i] < numbers[0])
+                {
+                    ++amount;
+                }
+            }
+            return amount;
+        }
+        public static void SumElementsGreaterThanLast(List<int> numbers, out int sum)
+        {
+            sum = 0;
+            for (var i = 0; i < numbers.Count; i++)
+            {
+                if (numbers[i] > numbers[numbers.Count - 1])
+                {
+                    sum += numbers[i];
+                }
+            }
+        }
+        public static void CheckMultiplesOf3Or4(List<int> numbers)
+        {
+            var count = 0;
+            for (var i = 0; i < numbers.Count; i++)
+            {
+                if (numbers[i] % 3 != 0 && numbers[i] % 4 != 0)
+                {
+                    count++;
+                    Console.Write("salom");
+                    break;
+                }
+            }
+            if (count == 0)
+            {
+                Console.Write("hello");
+            }
+        }
+        public static bool ChekIfIncreasing(List<int> numbers)
+        {
+            for (var i = 0; i < numbers.Count - 1; i++)
+            {
+                if (numbers[i] > numbers[i + 1])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        public static bool ChekIfDecreasing(List<int> numbers)
+        {
+            for (var i = 0; i < numbers.Count - 1; i++)
+            {
+                if (numbers[i] < numbers[i + 1])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        public static List<int> SwapMinMax(List<int> numbers)
+        {
+            var elementOfList = numbers[0];
+            var maxElementOfList = int.MinValue;
+            var indexOfMaxElement = 0;
+            var minElementOfList = int.MaxValue;
+            var indexOfMinElement = 0;
+            for (var i = 0; i < numbers.Count - 1; i++)
+            {
+                if (numbers[i] > maxElementOfList)
+                {
+                    maxElementOfList = numbers[i];        
+                    indexOfMaxElement = i;
+                }
+                if (numbers[i] < minElementOfList)
+                {
+                    minElementOfList = numbers[i];
+                    indexOfMinElement = i;
+                }
+            }
+            var temp = numbers[indexOfMaxElement];
+            numbers[indexOfMaxElement] = numbers[indexOfMinElement];
+            numbers[indexOfMinElement] = temp;
+            return numbers;
+
+        }
+        public static int ValueOfTheElementsOfList(List<int> numbers)
+        {
+            var value = 0;
+            foreach(var number in numbers)
+            {
+                value += number;
+            }
+            return value;
+        }
+        public static void FindMaxSumPair(List<int> numbers)
+        {
+            var sumPair = int.MinValue;
+            var startinIndexOfSumPair = 0;
+            for (var i = 0; i < numbers.Count - 1; i++)
+            {
+                if (numbers[i] + numbers[i + 1] > sumPair)   // 3 5 2 4 6 
+                {
+                    sumPair = numbers[i] + numbers[i + 1];
+                    startinIndexOfSumPair = i;
+                }
+            }
+            Console.Write($"{numbers[startinIndexOfSumPair]}  {numbers[startinIndexOfSumPair + 1]}");
+        }
+        public static void CountGreaterThanLeftNeighbor(List<int> numbers)
+        {
+            for(var i = 1;i < numbers.Count;i++)
+            {
+                if (numbers[i] > numbers[i - 1])
+                {
+                    Console.Write($"{numbers[i]}  ");
+                }
+            }
+        }
+        public static void CreateProductList(List<int> firstList, List<int> secondList, List<int> newList)
+        {
+            for (var i = 0; i < firstList.Count; i++)
+            {
+                var multiplicationOfSamelNumbers = 1;
+
+                for (var j = 0; j < secondList.Count; j++)
+                {
+                    if (firstList[i] == secondList[j])
+                    {
+                        multiplicationOfSamelNumbers = firstList[i] * secondList[j];
+                        newList.Add(multiplicationOfSamelNumbers);
+                        firstList.Remove(i);
+                        secondList.Remove(j);
+                        break;
+                    }
+                }
+            }
+        }
+        public static void CountElementsStartingWithDollar(List<string> texts, out int amount)
+        {
+            amount = 0;
+            var stringToCheck = string.Empty;
+            for (var i = 0;i < texts.Count;i++)
+            {
+                stringToCheck = texts[i];
+                if (stringToCheck[0] == '$')
+                {
+                    ++amount;
+                }
+            }
+        }
+        public static void PrintUppercaseElements(List<string> texts)
+        {
+            for(var i = 0; i < texts.Count; i++)
+            {
+                var amountToCheck = 0;
+                for (var j = 0; j < texts[i].Length;j++)
+                {
+                    if (char.IsLower(texts[i][j]))      // YUF YU FYUU uyukh
+                    {
+                        ++amountToCheck;
+                    }
+                }
+                if (amountToCheck == 0)    
+                {
+                    Console.Write($"{texts[i]}   ");
+                }
+            }
+        }
+        public static List<int> AddToFirstEvenNumber(List<int> numbers)
+        {
+            var firstEvenNumber = 0;
+            for (var i = 0; i < numbers.Count; i++)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    firstEvenNumber=numbers[i];
+                    break;
+                }
+            }
+            for (var i = 0; i < numbers.Count; i++)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    numbers[i] += firstEvenNumber;
+                }
+            }
+            return numbers;
+        }
+        public static List<int> AddToLastOddNumber(List<int> numbers)
+        {
+            var lastOddNumber = 0;
+            for (var i = 0; i < numbers.Count; i++)
+            {
+                if (numbers[i] % 2 != 0)
+                {
+                    lastOddNumber = numbers[i];
+                }
+            }
+            for(var i  = 0; i < numbers.Count;i++)
+            {
+                if (numbers[i] % 2 != 0)
+                {
+                    numbers[i] += lastOddNumber;
+                }
+            }
+            return numbers;
+        }
+        public static void FindMinOfEvenIndexedElements(List<int> numbers, out int minOfEvenIndex)
+        {
+            minOfEvenIndex = int.MaxValue;
+            for (var i = 0; i < numbers.Count; i += 2)
+            {
+                if (numbers[i] < minOfEvenIndex)
+                {
+                    minOfEvenIndex = numbers[i];
+                }
+            }
+        }
+        public static void CreateMaxList(List<int> firstList, List<int> secondList, List<int> newList)
+        {
+            for (var i = 0;i < firstList.Count;i++)
+            {
+                if (firstList[i] > secondList[i])
+                {
+                    newList.Add(firstList[i]);
+                }
+                else
+                {
+                    newList.Add(secondList[i]);
+                }
+            }
+        }
+        public static void CreateEvenIndexedList(List<int> numbers, List<int> newList)
+        {
+            for (var i = 0; i < numbers.Count; i += 2)
+            {
+                newList.Add(numbers[i]);
+            }
+        }
+        static void Main(string[] args)
+        {   
+            Console.Write("Enter the length of the list :");
+            var length = int.Parse(Console.ReadLine());
+            var firstListConsistsNumbers = new List<int>();
+            var secondListConsisitsNumbers = new List<int>();
+            var texts = new List<int>();
+            int amount;
+            FillAndGetTheList(firstListConsistsNumbers, length);
+            CreateEvenIndexedList(firstListConsistsNumbers, texts);
+            DisplayList(texts);
+        }
+        public static void FillAndGetListForString(List<string> texts, int length)
+        {
+            for (var i = 0; i < length; i++)
+            {
+                Console.Write($"{i} : ");
+                var text = Console.ReadLine();
+                texts.Add(text);
+            }
+        }
+        public static void FillAndGetTheList(List<int> numbers, int length)
+        {
+            numbers.Clear();
+            for (var i = 0; i < length; i++)
+            {
+                Console.Write($"{i} : ");
+                var number = int.Parse(Console.ReadLine());
+                numbers.Add(number);
+            }
+        }
+        public static void DisplayList(List<int> numbers)
+        {
+            foreach (var number in numbers)
+            {
+                Console.Write(number + "  ");
+            }
+        }
+    }
+}
