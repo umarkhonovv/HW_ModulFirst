@@ -1,0 +1,15 @@
+D:\GitHubProjects\HW_ModulFirst\CRUD_Student\bin\Debug\net8.0\CRUD_Student.exe
+D:\GitHubProjects\HW_ModulFirst\CRUD_Student\bin\Debug\net8.0\CRUD_Student.deps.json
+D:\GitHubProjects\HW_ModulFirst\CRUD_Student\bin\Debug\net8.0\CRUD_Student.runtimeconfig.json
+D:\GitHubProjects\HW_ModulFirst\CRUD_Student\bin\Debug\net8.0\CRUD_Student.dll
+D:\GitHubProjects\HW_ModulFirst\CRUD_Student\bin\Debug\net8.0\CRUD_Student.pdb
+D:\GitHubProjects\HW_ModulFirst\CRUD_Student\obj\Debug\net8.0\CRUD_Student.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHubProjects\HW_ModulFirst\CRUD_Student\obj\Debug\net8.0\CRUD_Student.AssemblyInfoInputs.cache
+D:\GitHubProjects\HW_ModulFirst\CRUD_Student\obj\Debug\net8.0\CRUD_Student.AssemblyInfo.cs
+D:\GitHubProjects\HW_ModulFirst\CRUD_Student\obj\Debug\net8.0\CRUD_Student.csproj.CoreCompileInputs.cache
+D:\GitHubProjects\HW_ModulFirst\CRUD_Student\obj\Debug\net8.0\CRUD_Student.sourcelink.json
+D:\GitHubProjects\HW_ModulFirst\CRUD_Student\obj\Debug\net8.0\CRUD_Student.dll
+D:\GitHubProjects\HW_ModulFirst\CRUD_Student\obj\Debug\net8.0\refint\CRUD_Student.dll
+D:\GitHubProjects\HW_ModulFirst\CRUD_Student\obj\Debug\net8.0\CRUD_Student.pdb
+D:\GitHubProjects\HW_ModulFirst\CRUD_Student\obj\Debug\net8.0\CRUD_Student.genruntimeconfig.cache
+D:\GitHubProjects\HW_ModulFirst\CRUD_Student\obj\Debug\net8.0\ref\CRUD_Student.dll
